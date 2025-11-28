@@ -6,7 +6,8 @@ __pycache__/
 # Файлы конфигурации для venv
 venv/
 .env
-tutorial-env/  # venv for this project
+# venv for this project имя каталога со слешем в конце
+tutorial-env/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
