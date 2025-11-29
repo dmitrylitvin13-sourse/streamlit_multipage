@@ -2,24 +2,30 @@
 import streamlit as st
 import pandas as pd
 import sys
-
-# 
+# import os
+# print(os.getcwd())
+# # 
 # https://docs.python.org/3/tutorial/venv.html
 # pip install -r requirements.txt
 # to run from "D:\...\Python\VSC\multipage":   streamlit run multipage_app.py
 
 # st.set_page_config(layout="wide")
-st.set_page_config(layout="centered")
+# st.set_page_config(layout="centered")  # default
 
 # Define the pages
-#  emoji from  https://unicode.org/emoji/charts/emoji-style.html
-page_1 = st.Page("page_1.py", title="Page 1", icon="👀")
-page_2 = st.Page("page_2.py ", title="Page 2", icon="📈")
-page_3 = st.Page("page_3.py", title="Page 3", icon="🚀")
-page_4 = st.Page("page_4.py", title="Page 4", icon="🌞")
+#  emoji from  https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/
+#              https://getemoji.com/
+pages = [
+    st.Page("page_1.py", title="Page 1", icon="👀"), # "":eyes:"
+    st.Page("page_2.py ", title="Page 2", icon="📈"),  # ":chart_with_upwards_trend:"
+    st.Page("page_3.py", title="Page 3", icon="🚀"), # ":rocket:"
+    st.Page("page_4.py", title="Page 4", icon="🌞"), # ":sun_with_face:"
+]
+
 
 # Set up navigation
-pg = st.navigation([page_1, page_2, page_3, page_4])
+# pg = st.navigation([page_1, page_2, page_3, page_4])
+pg = st.navigation({'Pages:' : pages})
 
 @st.cache_data                 # 👈 Add the caching decorator
 def load_data(url):

@@ -8,6 +8,9 @@ import seaborn as sns
 import warnings
 # Ignore all warnings
 warnings.filterwarnings("ignore")
+# import os
+# print(os.getcwd())
+# 
 
 # Main page content
 # st.markdown("# page 1 👀")  
