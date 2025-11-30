@@ -40,7 +40,7 @@ with st.sidebar:
 
 """
 
-column1, column2, column3 = st.columns([1, 1.5, 2.5], border=True)
+column1, column2, column3 = st.columns([1.5, 1.5, 2], border=True)
 with column1:
     '### Origin data'
     if st.checkbox('Show all data', value=True):
