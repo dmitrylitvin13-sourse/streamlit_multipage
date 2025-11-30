@@ -51,7 +51,7 @@ with column1:
 with column2:
     '### Use `sns.regplot()`', f':orange-background[corr = {bikes_week[col_x].corr(bikes_week[col_y]):>20.2f}]'
     df = bikes_week
-    fig, ax = plt.subplots(figsize=(4,2), dpi=80)   # dpi не работает здесь
+    fig, ax = plt.subplots(figsize=(4,6), dpi=80)   # dpi не работает здесь
     # st.line_chart(bikes, x=col_x, y=col_y)
     # st.scatter_chart(bikes, x=str(col_x), y=str(col_y))
     sns.regplot(x=df[col_x], y=df[col_y], ax=ax)  # + seaborn
