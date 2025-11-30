@@ -7,7 +7,7 @@ import sys
 # # 
 # https://docs.python.org/3/tutorial/venv.html
 # pip install -r requirements.txt
-# to run from "D:\...\Python\VSC\multipage":   streamlit run multipage_app.py
+# to run from "D:\...\Python\VSC\multipage":   streamlit run Main_page.py
 
 st.set_page_config(layout="wide", page_title='Main', page_icon="🏆",)
 
